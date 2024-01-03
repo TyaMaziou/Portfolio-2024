@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- css -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+
+</head>
+<body>
+
+<nav id="desktop-nav">
+    <div class="logo">Tya Maziere</div>
+    <div>
+        <ul class="nav-links">
+            <li><a href="about">Présentation</a></li>
+            <li><a href="competences">Compétences</a></li>
+            <li><a href="parcours">Parcours</a></li>
+            <li><a href="projects">Projets</a></li>
+            <li><a href="contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<nav id="hamburger-nav">
+    <div class="logo">Tya Maziere</div>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="menu-links">
+            <li><a href="#about"  onclick="toggleMenu()" >Présentation</a></li>
+            <li><a href="#competences"  onclick="toggleMenu()">Compétences</a></li>
+            <li><a href="#parcours"  onclick="toggleMenu()">Parcours</a></li>
+            <li><a href="#projects"  onclick="toggleMenu()">Projets</a></li>
+            <li><a href="#contact"  onclick="toggleMenu()">Contact</a></li>
+        </div>
+    </div>
+</nav>
+
+
+<!-- Profile -->
+
+<section class="profile">
+    <div class="section__pic-container">
+        <img src="img/tya.jpg" alt="tya maziere photo de profile">
+    </div>
+    <div class="section__text">
+        <p class="section__text__p1">Bonjour, je suis</p>
+        <h1 class="title">Tya Maziere</h1>
+        <p class="section__text__p2">Aprentie Frontend Developer</p>
+        <div class="btn-container">
+            <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">Télécharger CV</button>
+            <button class="btn btn-color-1" onclick="location.href='./#contact' ">Contactez moi pour plus d'informations</button>
+        </div>
+        <div id="socials-container">
+            <img src="./assets/linkedin.png" alt="Mon profile LinkedIn" class="icon" onclick="location.href='https://linkedin.com/'">
+        </div>
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+        <!-- contact -->
+        <!-- <section id="contact">
+            <h1>Contact</h1>
+
+            <form action="" class="contact-form" id="contact-form">
+                <input type="text" placeholder="Nom" class="name" required>
+                <input type="emaiil" name="" id="" placeholder="Adresse mail..." class="email" required>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Message..." class="message" required></textarea>
+                <input type="submit" value="Envoyer" class="send-btn">
+            </form>
+
+            <!-- email -->
+
+            <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+            <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+            <script type="text/javascript">
+                (function(){
+                    emailjs.init("clzIOzQauq_8gmQpt");
+                })();
+            </script> -->
+
+        <!-- </section> -->
+
+
+    <!-- <footer>
+    
+        <div>
+            <p class="footer__copy">Copyright &#169; Tya-Maeva - 2023 - All right reserved</p>
+        </div>
+
+    </footer> -->
+
+
+    <script src="main.js"></script>
+
+</body>
+</html>
